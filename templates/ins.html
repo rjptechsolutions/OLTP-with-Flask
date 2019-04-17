@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Insert Page</h2>
+    <form action="/addrec" method="POST">
+        <table>
+            <tr>
+                <td>Enther the Number of People</td>
+                <td><input type="text" name="tp" required></td>
+            </tr>
+            <tr>
+                <td>Enther the Name of Movie</td>
+                <td><input type="text" name="nm" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Update Page</h2>
+    <form action="/update" method="GET">
+        <table>
+            <tr>
+                <td>Enther the Id </td>
+                <td><input type="text" name="pk" required></td>
+            </tr>
+
+            <tr>
+                <td>Enther the Number of People</td>
+                <td><input type="text" name="tp" required></td>
+            </tr>
+            <tr>
+                <td>Enther the Name of Movie</td>
+                <td><input type="text" name="nm" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Delete Page</h2>
+
+    <form action="/delete" method="GET">
+        <table>
+            <tr>
+                <td>Enther the id </td>
+                <td><input type="text" name="pk" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="/uploader" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" />
+    </form>
+
+    <h2>View All Records </h2>
+    <a href="/list">Records</a>
+</body>
+
+</html>
